@@ -5,9 +5,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.tasks-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
+  
+}
+.task-container{
+  width: 250px;
+  background-color: #c6bbaa;
+  padding: 15px;
+  position: relative;
+}
+.task-container h1{
+  font-size: 15px;
+  
+}
+.task-container p{
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+
+.tasks-form__container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.tasks-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.popup-container{
+  display: none;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+.active{
+  display: block;
+  position: fixed;
+  background-color: cadetblue;
+  top: 7%;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+}
+.comment-item{
+  list-style-type: none;
+  width: 100%;
+  border-bottom: 1px solid black;
+  
+}
+.closePopup{
+  position: absolute;
+  top:-10px;
+  right: -10px;
+  padding: 5px 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+}
+.closePopup:hover{
+  cursor: pointer;
 }
